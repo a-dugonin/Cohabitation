@@ -1,3 +1,6 @@
+import random
+
+
 class Human:
     def __init__(self, name: str, satiety: int = 50, home: 'House' = None):
         self.name = name
@@ -86,7 +89,6 @@ def init_home():
 
 
 def main():
-    import random
     humans = [Human(name='Anton'), Human(name='Anna')]
     home = init_home()
     for human in humans:
